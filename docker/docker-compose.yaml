@@ -11,6 +11,15 @@ volumes:
   kafka-data:
 
 services:
+  php-client:
+    build:
+      context: ./php/
+    image: silvav/php
+    container_name: silvav_php
+    volumes:
+      - ./php/php.ini:/opt/bitnami/php/etc/conf.d/php.ini:ro
+      - ../src:/app/src:rw
+
   zookeeper:
     image: confluentinc/cp-zookeeper:5.5.1
     container_name: silvav_zookeeper

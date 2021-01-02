@@ -29,3 +29,7 @@ crtl+c to stop
 /usr/bin/kafka-console-consumer --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
 ```
 crtl+c to stop
+
+## Rdkafka examples
+
+[Example using the RdKafka extension that provides a Kafka client for PHP](https://arnaud.le-blanc.net/php-rdkafka-doc/phpdoc/rdkafka.examples.html).
